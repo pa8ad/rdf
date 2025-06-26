@@ -6,6 +6,5 @@ openai>=0.28.0
 python-dotenv
 datetime
 pathlib
-fnmatch
 json
 os
