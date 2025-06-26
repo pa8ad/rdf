@@ -4,3 +4,9 @@ pandas
 pyvis
 openai>=0.28.0
 python-dotenv
+datetime
+pathlib
+xml.etree
+fnmatch
+json
+os
