@@ -5,5 +5,3 @@ pyvis
 openai>=0.28.0
 python-dotenv
 plotly
-json
-python-magic
