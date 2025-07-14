@@ -113,7 +113,9 @@ with col1:
 
     # Select tags
     options = [t for t in tags if t not in wild_excl]
-    default = st.session_state.get('include', options)
+    raw_default = st.session_state.get('include', options)
+    # Ensure defaults are valid options to avoid Streamlit errors
+    default = [t for t in raw_default if t in options]
     def format_label(tag):
         import re
         return re.sub(r"\{.*?\}", "", tag).strip()
